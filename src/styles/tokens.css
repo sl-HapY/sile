@@ -1,0 +1,118 @@
+/* ============================================================
+   Sile — Material 3 design tokens
+   ============================================================ */
+
+:root {
+  --md-accent: #6750a4;
+  --md-radius-s: 8px;
+  --md-radius-m: 12px;
+  --md-radius-l: 16px;
+  --md-radius-xl: 28px;
+  --md-font: "Segoe UI Variable", "Segoe UI", Roboto, "Inter", system-ui, -apple-system, sans-serif;
+  --md-mono: "Cascadia Code", "JetBrains Mono", Consolas, "Courier New", monospace;
+}
+
+/* ---------- Light scheme (default, accent-driven) ---------- */
+:root {
+  --primary: var(--md-accent);
+  --on-primary: #ffffff;
+  --primary-container: color-mix(in srgb, var(--md-accent) 16%, #ffffff);
+  --on-primary-container: color-mix(in srgb, var(--md-accent) 70%, #1a1a2e);
+  --secondary-container: color-mix(in srgb, var(--md-accent) 10%, #f2f0f7);
+  --on-secondary-container: color-mix(in srgb, var(--md-accent) 55%, #1a1a2e);
+  --tertiary-container: color-mix(in srgb, var(--md-accent) 8%, #e8f4f8);
+  --on-tertiary-container: color-mix(in srgb, var(--md-accent) 60%, #0d3341);
+
+  --bg: color-mix(in srgb, var(--md-accent) 4%, #f8f7fc);
+  --surface: #ffffff;
+  --surface-1: color-mix(in srgb, var(--md-accent) 5%, #ffffff);
+  --surface-2: color-mix(in srgb, var(--md-accent) 8%, #ffffff);
+  --surface-3: color-mix(in srgb, var(--md-accent) 11%, #ffffff);
+  --on-surface: #1b1b1f;
+  --on-surface-variant: #49454f;
+  --outline: #79747e;
+  --outline-variant: color-mix(in srgb, var(--md-accent) 12%, #cac4d0);
+  --divider: color-mix(in srgb, var(--md-accent) 8%, #e7e2ec);
+
+  --error: #b3261e;
+  --on-error: #ffffff;
+  --error-container: #f9dedc;
+  --success: #1b7f4d;
+  --success-container: #d3f3e0;
+  --warning: #8a6116;
+  --warning-container: #ffedbe;
+
+  --titlebar: color-mix(in srgb, var(--md-accent) 6%, #f3effa);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 3px 1px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, 0.14), 0 2px 6px 2px rgba(0, 0, 0, 0.08);
+  --shadow-3: 0 4px 8px 3px rgba(0, 0, 0, 0.10), 0 1px 3px rgba(0, 0, 0, 0.16);
+  --scrim: rgba(0, 0, 0, 0.4);
+  --hover: color-mix(in srgb, var(--md-accent) 7%, transparent);
+  --pressed: color-mix(in srgb, var(--md-accent) 12%, transparent);
+  --selected: color-mix(in srgb, var(--md-accent) 12%, #ffffff);
+  --drop-target: color-mix(in srgb, var(--md-accent) 14%, #ffffff);
+}
+
+/* ---------- Dark scheme ---------- */
+:root[data-theme="dark"] {
+  --primary: color-mix(in srgb, var(--md-accent) 80%, #ffffff);
+  --on-primary: color-mix(in srgb, var(--md-accent) 40%, #101018);
+  --primary-container: color-mix(in srgb, var(--md-accent) 45%, #16162a);
+  --on-primary-container: color-mix(in srgb, var(--md-accent) 20%, #eaddff);
+  --secondary-container: color-mix(in srgb, var(--md-accent) 25%, #26222f);
+  --on-secondary-container: color-mix(in srgb, var(--md-accent) 20%, #e8e0f0);
+  --tertiary-container: color-mix(in srgb, var(--md-accent) 18%, #1c2430);
+  --on-tertiary-container: color-mix(in srgb, var(--md-accent) 15%, #cfe8f5);
+
+  --bg: color-mix(in srgb, var(--md-accent) 5%, #0f0f16);
+  --surface: color-mix(in srgb, var(--md-accent) 6%, #17171f);
+  --surface-1: color-mix(in srgb, var(--md-accent) 9%, #1b1b24);
+  --surface-2: color-mix(in srgb, var(--md-accent) 12%, #1e1e28);
+  --surface-3: color-mix(in srgb, var(--md-accent) 15%, #22222c);
+  --on-surface: #e6e1e9;
+  --on-surface-variant: #cac4d0;
+  --outline: #938f99;
+  --outline-variant: color-mix(in srgb, var(--md-accent) 15%, #49454f);
+  --divider: color-mix(in srgb, var(--md-accent) 10%, #2b2930);
+
+  --error: #f2b8b5;
+  --on-error: #601410;
+  --error-container: #8c1d18;
+  --success: #7ddb9f;
+  --success-container: #0f4a2c;
+  --warning: #ffd54f;
+  --warning-container: #5c4400;
+
+  --titlebar: color-mix(in srgb, var(--md-accent) 8%, #13131b);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-2: 0 2px 6px 2px rgba(0, 0, 0, 0.5);
+  --shadow-3: 0 8px 16px 4px rgba(0, 0, 0, 0.6);
+  --scrim: rgba(0, 0, 0, 0.6);
+  --hover: color-mix(in srgb, var(--md-accent) 10%, transparent);
+  --pressed: color-mix(in srgb, var(--md-accent) 16%, transparent);
+  --selected: color-mix(in srgb, var(--md-accent) 22%, #1e1e28);
+  --drop-target: color-mix(in srgb, var(--md-accent) 26%, #1e1e28);
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--md-font);
+  background: var(--bg);
+  color: var(--on-surface);
+  font-size: 13.5px;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--outline-variant); border-radius: 5px; border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--outline); border: 2px solid transparent; background-clip: padding-box; }
+::-webkit-scrollbar-track { background: transparent; }
+::selection { background: color-mix(in srgb, var(--md-accent) 30%, transparent); }

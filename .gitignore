@@ -1,0 +1,45 @@
+# Node
+node_modules/
+dist/
+
+# Rust
+src-tauri/target/
+src-tauri/e2e/target/
+src-tauri/gen/
+
+# Generated assets
+src-tauri/icons/android/
+src-tauri/icons/ios/
+
+# Environment and secrets
+.env
+.env.*
+*.key
+scripts/run-e2e.bat
+e2e-out.txt
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tooling state
+.mimosa/
+
+# Test artifacts
+src-tauri/e2e/out/
+
+# Built binaries (use Releases instead)
+Sile-Setup.exe
+Sile-Portable.exe
+WebView2Loader.dll

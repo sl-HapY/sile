@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "mimosa-hook-status/v1",
+  "recordedAt": "2026-10-30T22:34:16.763Z",
+  "sessionId": "session_9cc8f7f7ade66d06a55750086c1589fb",
+  "event": "PostToolUse",
+  "toolName": "Edit",
+  "file": "C:/Users/1388m/.zcode/cli/memories/projects/sile-0c51cef6b64370db/memory/sile-project-env.md",
+  "outcome": "clear",
+  "coverage": "complete",
+  "findingCount": 0,
+  "durationMs": 5,
+  "hostState": "hook_complete",
+  "reportHint": ".mimosa/reports/"
+}
