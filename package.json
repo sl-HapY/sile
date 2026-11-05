@@ -1,7 +1,7 @@
 {
   "name": "sile",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sile — a modern file transfer client with previews, media player and built-in code editor",
   "type": "module",
   "scripts": {

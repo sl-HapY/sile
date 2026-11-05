@@ -1,6 +1,6 @@
 [package]
 name = "sile"
-version = "1.0.0"
+version = "1.0.1"
 description = "Sile — modern file transfer client"
 authors = ["Sile"]
 edition = "2021"
