@@ -43,3 +43,7 @@ src-tauri/e2e/out/
 Sile-Setup.exe
 Sile-Portable.exe
 WebView2Loader.dll
+
+# Release archives
+Sile-1.0.0-portable-win64.zip
+Sile-1.0.1-portable-win64.zip
